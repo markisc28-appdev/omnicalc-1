@@ -4,7 +4,9 @@ Rails.application.routes.draw do
 
   get("square/results", { :controller => "application", :action => "calculate_square"})
 
-  get("square_root/new", { :controller => "application", :action => ""})
+  get("sqrt/new", { :controller => "application", :action => "blank_sqrt_form"})
+
+  get("sqrt/results", { :controller => "application", :action => "calculate_sqrt"})
 
   get("payment/new", { :controller => "application", :action => ""})
 
